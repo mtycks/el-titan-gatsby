@@ -21,14 +21,14 @@ const BlogIndex = ({ data, location }) => {
             <h2>Welcome!</h2>
             <p>Let's stay connected!<br />Download my App Titan23</p>
 
-            <p>
+            <div className="mb-3">
               <a href="https://play.google.com/store/apps/details?id=com.titan23" alt="Get it on Google Play" className="store">
                 <Img fluid={data.store_google.childImageSharp.fluid} alt="Get it on Google Play" style={{width:'100%', display:'inline-block'}} />
               </a>
               <a href="https://apps.apple.com/us/app/titan23/id1454549170" alt="Download on the App Store" className="store">
                 <Img fluid={data.store_apple.childImageSharp.fluid} alt="Download on the App Store" style={{width:'100%', display:'inline-block'}} />
               </a>
-            </p>
+            </div>
           
             <div className="bottom-button-holder">
               
