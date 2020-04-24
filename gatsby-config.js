@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatstrap',
-    description: 'Gatsby starter for bootstrap a blog',
-    siteUrl: 'https://gatstrap.netlify.com',
-    author: 'jaxx2104',
-    twitter: 'jaxx2104',
+    title: 'ElTitan23.com',
+    description: 'Let\'s stay connected! Download my App Titan23',
+    siteUrl: 'https://eltitan23.com',
+    author: 'PopFlyXP',
+    twitter: 'popflyxp',
     adsense: '',
   },
   pathPrefix: '/',
@@ -50,26 +50,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Gatstrap',
-        short_name: 'Gatstrap',
-        description: 'Gatsby starter for bootstrap a blog',
-        homepage_url: 'https://gatstrap.netlify.com',
+        name: 'ElTitan23.com',
+        short_name: 'El Titan',
+        description: 'Let\'s stay connected! Download my App Titan23',
+        homepage_url: 'https://eltitan23.com',
         start_url: '/',
         background_color: '#fff',
         theme_color: '#673ab7',
-        display: 'standalone',
-        icons: [
-          {
-            src: '/img/android-chrome-192x192.png',
-            sizes: '192x192',
-            type: 'image/png',
-          },
-          {
-            src: '/img/android-chrome-512x512.png',
-            sizes: '512x512',
-            type: 'image/png',
-          },
-        ],
+        display: 'minimal-ui',
+        icon: `content/images/titan23icon.png`, // This path is relative to the root of the site.
       },
     },
     {
