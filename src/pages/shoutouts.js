@@ -13,13 +13,16 @@ import Video2 from '../../content/videos/Video_2.mp4'
 import Video2Webm from '../../content/videos/Video_2.webm'
 import Video4 from '../../content/videos/Video_4.mp4'
 import Video4Webm from '../../content/videos/Video_4.webm'
+import Poster1 from '../../content/images/poster-1.jpg'
+import Poster2 from '../../content/images/poster-2.jpg'
+import Poster3 from '../../content/images/poster-3.jpg'
 
 const ShoutoutsPage = ({ data, location }) => {
   
   const shoutoutVideos = [
-    {mp4:Video4, webm:Video4Webm, title: 'Happy Birthday', link: 'https://google.com'},
-    {mp4:Video2, webm:Video2Webm, title: 'Happy Anniversary', link: 'https://google.com'},
-    {mp4:Video, webm:VideoWebm, title: 'Happy Mother\'s Day', link: 'https://google.com'},
+    {mp4:Video4, webm:Video4Webm, title: 'Happy Birthday', link: 'https://google.com', poster:Poster1},
+    {mp4:Video2, webm:Video2Webm, title: 'Happy Anniversary', link: 'https://google.com', poster:Poster2},
+    {mp4:Video, webm:VideoWebm, title: 'Happy Mother\'s Day', link: 'https://google.com', poster:Poster3},
     
   ]
 
@@ -54,7 +57,7 @@ const ShoutoutsPage = ({ data, location }) => {
                     <figure className="video-card__figure">
 
                       <div className="video-card__image">
-                        <video controls>
+                        <video controls poster={shoutoutvideo.poster}>
                           <source src={shoutoutvideo.mp4} type="video/mp4" />
                           <source src={shoutoutvideo.webm} type="video/webm" />
                         </video>
