@@ -31,7 +31,7 @@ const Template = ({ data, location }) => (
 export default Template
 
 export const pageQuery = graphql`
-  query PostByPath($path: String!) {
+  query PostByPath {
     site {
       meta: siteMetadata {
         title
@@ -40,26 +40,6 @@ export const pageQuery = graphql`
         author
         twitter
         adsense
-      }
-    }
-    post: markdownRemark(frontmatter: { path: { eq: $path } }) {
-      id
-      html
-      frontmatter {
-        layout
-        title
-        path
-        category
-        tags
-        description
-        date(formatString: "YYYY/MM/DD")
-        image {
-          childImageSharp {
-            fluid(maxWidth: 500) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
       }
     }
   }
