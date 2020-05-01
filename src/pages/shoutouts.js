@@ -7,22 +7,26 @@ import Post from 'templates/post'
 import Meta from 'components/meta'
 import Layout from 'components/layout'
 
-import Video from '../../content/videos/Video.mp4'
-import VideoWebm from '../../content/videos/Video.webm'
-import Video2 from '../../content/videos/Video_2.mp4'
-import Video2Webm from '../../content/videos/Video_2.webm'
-import Video4 from '../../content/videos/Video_4.mp4'
-import Video4Webm from '../../content/videos/Video_4.webm'
-import Poster1 from '../../content/images/poster-1.jpg'
-import Poster2 from '../../content/images/poster-2.jpg'
-import Poster3 from '../../content/images/poster-3.jpg'
+import AnniversaryMP4 from '../../content/videos/shoutouts/anniversary.mp4'
+import AnniversaryWEBM from '../../content/videos/shoutouts/anniversary.webm'
+import AnniversaryPOSTER from '../../content/videos/shoutouts/anniversary.jpg'
+import GraduationMP4 from '../../content/videos/shoutouts/graduation.mp4'
+import GraduationWEBM from '../../content/videos/shoutouts/graduation.webm'
+import GraduationPOSTER from '../../content/videos/shoutouts/graduation.jpg'
+import BirthdayMP4 from '../../content/videos/shoutouts/happy-birthday.mp4'
+import BirthdayWEBM from '../../content/videos/shoutouts/happy-birthday.webm'
+import BirthdayPOSTER from '../../content/videos/shoutouts/happy-birthday.jpg'
+import MothersMP4 from '../../content/videos/shoutouts/mothers-day-spanish.mp4'
+import MothersWEBM from '../../content/videos/shoutouts/mothers-day-spanish.webm'
+import MothersPOSTER from '../../content/videos/shoutouts/mothers-day.jpg'
 
 const ShoutoutsPage = ({ data, location }) => {
   
   const shoutoutVideos = [
-    {mp4:Video4, webm:Video4Webm, title: 'Happy Birthday', link: 'https://google.com', poster:Poster1},
-    {mp4:Video2, webm:Video2Webm, title: 'Happy Anniversary', link: 'https://google.com', poster:Poster2},
-    {mp4:Video, webm:VideoWebm, title: 'Happy Mother\'s Day', link: 'https://google.com', poster:Poster3},
+    {mp4:BirthdayMP4, webm:BirthdayWEBM, title: 'Happy Birthday', link: 'https://google.com', poster:BirthdayPOSTER},
+    {mp4:AnniversaryMP4, webm:AnniversaryWEBM, title: 'Happy Anniversary', link: 'https://google.com', poster:AnniversaryPOSTER},
+    {mp4:MothersMP4, webm:MothersWEBM, title: 'Happy Mother\'s Day', link: 'https://google.com', poster:MothersPOSTER},
+    {mp4:GraduationMP4, webm:GraduationWEBM, title: 'Graduation Shoutout', link: 'https://google.com', poster:GraduationPOSTER},
     
   ]
 
@@ -49,7 +53,7 @@ const ShoutoutsPage = ({ data, location }) => {
           {shoutoutVideos.map((shoutoutvideo, index) => {
             
             return(
-              <div className="col-lg-4 offset-lg-0 col-md-8 offset-md-2 offset-0 " key={index}>
+              <div className="col-lg-3 offset-lg-0 col-6 offset-0 " key={index}>
                           
                 <article className="video-card">
                   <aside className="video-card__aside">
@@ -90,7 +94,7 @@ const ShoutoutsPage = ({ data, location }) => {
             <h2>Have Adrian deliver a Team Thank You or some Monday Motivation.</h2>
           </div>
 
-          <div className="col-md-4 offset-md-4">
+          <div className="col-lg-4 offset-lg-4 col-md-6 offset-md-3">
                           
             <article className="video-card">
               <aside className="video-card__aside">

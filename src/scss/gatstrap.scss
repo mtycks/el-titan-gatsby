@@ -183,11 +183,19 @@ body{
   }
 
   .video-card__actions .btn{
-    border-radius:15px
+    border-radius:15px;
+    font-weight:bold;
   }
 
 video{
   max-width:100%;
+  object-fit:cover;
+}
+
+@media(min-width:992px) and (max-width:1199px){
+  .video-card__title{
+    font-size:1rem;
+  }
 }
 
 @media(max-width:768px){
@@ -204,5 +212,11 @@ video{
     max-width:80%
   }
   
+}
+
+@media(max-width:575px){
+  .video-card__title{
+    font-size:.75rem;
+  }
 }
   
